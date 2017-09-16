@@ -6,15 +6,15 @@
 int main(void)
 {
 	int i, * p = NULL;
-	printf("%d\n", p); //*p = 1; ´íÎó
+	printf("%d\n", p); //*p = 1; é”™è¯¯
 	p = (int *)malloc(sizeof(int)*SIZE);
 	if(p==NULL) exit(EXIT_FAILURE); 
 	for(i=0;i<SIZE;i++)
 	{
 		p[i] = i;
-		/* ´íÎó 
+		/* é”™è¯¯ 
 		*p = i
-		P++;
+		p++;
 		*/
 	}
 	printf("The 9nd element is %d\n", p[8]);
@@ -23,7 +23,7 @@ int main(void)
 	p[11] = 10;
 	printf("The 11st element is %d\n", p[11]);
 	
-	free(p);//×¢Òâ£¬Ç§Íò±ðÍüÁË£¬ÌØ±ðÈÝÒ×Íü£¡ 
+	free(p);//æ³¨æ„ï¼Œåƒä¸‡åˆ«å¿˜äº†ï¼Œç‰¹åˆ«å®¹æ˜“å¿˜ï¼ 
 	
 	return 0;
 }
